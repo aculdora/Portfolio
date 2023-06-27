@@ -1,0 +1,25 @@
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.icons {
+  width: 24px; /* Adjust the width as needed */
+  height: 24px; /* Adjust the height as needed */
+}
+
+.icon-link a {
+  display: block;
+  text-align: center;
+  margin-top: 5px; /* Adjust the margin as needed */
+  color: #000; /* Adjust the color as needed */
+  text-decoration: none;
+}

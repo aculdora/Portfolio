@@ -1,0 +1,48 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title,
+.card-text,
+.card-link {
+  text-align: center;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 30%;
+  margin: 10px;
+  height: 100%;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 30px; /* Change from 50px to 30px for a capsule shape */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.card-link:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  color: #fff; /* Change the color to white when hovered */
+  transform: scale(1.1); /* Increase the scale to create a zoom effect */
+}
+
+.card-link {
+  visibility: visible;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,93 @@
+.buttonDownload{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 30px; /* Change from 50px to 30px for a capsule shape */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s easea, color 0.3s ease;
+}
+.buttonHire {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 30px; /* Change from 50px to 30px for a capsule shape */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s easea, color 0.3s ease;
+}
+
+.buttonDownload:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  color: #fff; /* Change the color to white when hovered */
+}
+.buttonHire:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  color: #fff; /* Change the color to white when hovered */
+}
+
+.buttonDownload {
+  visibility: visible;
+}
+
+.buttonHire {
+  visibility: visible;
+}
+
+/* Add this CSS to create the zoom effect */
+.btn-download{
+  transition: transform 0.3s ease;
+}
+.buttonHire {
+  transition: transform 0.3s ease;
+}
+
+.buttonDownload:hover{
+  transform: scale(1.1); /* Increase the scale to create a zoom effect */
+}
+.buttonHire:hover {
+  transform: scale(1.1); /* Increase the scale to create a zoom effect */
+}
+
+.tab-content {
+  margin-top: 5px;
+}
+
+
+/*.ako {
+    height: 350px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}*/
+
+.profilepic {
+    background-image: url(../Photos/profile.jpg);
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+*{
+  font-family: inherit;
+  letter-spacing: 1px;
+}
