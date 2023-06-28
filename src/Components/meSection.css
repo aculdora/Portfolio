@@ -76,7 +76,8 @@
 .profilepic {
     background-image: url(../Photos/profile.jpg);
     height: 400px;
-    width: 100%;
+    width: 60%;
+    margin-left: 50px;
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,3 +92,4 @@
   font-family: inherit;
   letter-spacing: 1px;
 }
+

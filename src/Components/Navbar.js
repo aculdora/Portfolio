@@ -2,7 +2,8 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
-import Logo from '..//Photos/Logo.png';
+import Logo from '../Photos/Logo.png';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function AppNavbar() {
   return (
@@ -38,7 +39,26 @@ export default function AppNavbar() {
         </Navbar>
       </div>
 
-     
+      <div className="open-social">
+        <ul className="social-icons">
+          <li>
+            <a href="https://www.facebook.com/tonyieh/">
+              <FaFacebook />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/TonyMatters18">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/anthony-culdora-68436ab3/">
+              <FaLinkedin />
+            </a>
+          </li>
+          {/* Add more social media icons as needed */}
+        </ul>
+      </div>
     </div>
   );
 }

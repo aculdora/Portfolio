@@ -10,7 +10,7 @@ export default function Projects() {
     <section id="projects" className="profile-section">
     <div className="bg-secondary text-light p-5">
       <h2 className="text-center mb-4">Projects</h2>
-      <div className="row">
+      <div className="row" style={{ marginLeft: "150px"}}>
         <div className="col-md-4">
           <div className="card bg-dark text-light mb-4">
             <img src={capstone1} className="card-img-top" alt="Project 1" />

@@ -12,16 +12,13 @@ import './Home.css'
 export default function Home() {
   return (
     <Fragment>
+      
       <AppNavbar />
-      <Container>
-        <div>
-          <Profile />
+       <Profile />
           <AboutMe />
           <Projects />
           <Tools />
           <ContactMe />
-        </div>
-      </Container>
-    </Fragment>
+       </Fragment>
   );
 }

@@ -1,20 +1,21 @@
 .fixed-left {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -200px; /* Adjust the value to hide the navbar */
   bottom: 0;
   z-index: 9999;
   width: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: left 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.fixed-left:hover {
+  left: 0; /* Show the whole navbar on hover */
 }
 
 .fixed-left .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  width: 200px;
-  overflow-y: auto;
+  position: relative;
+  width: 100%;
 }
 
 .fixed-left .navbar-toggler {
@@ -28,7 +29,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, 0.8);
   padding-top: 60px; /* Adjust this value according to your header height */
   width: 200px;
 }
@@ -48,26 +49,53 @@
   background-color: #007bff;
 }
 
-.open-social {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 101;
-}
 
 .fixed-left .navbar-brand {
   display: flex;
   justify-content: center;
-  z-index: 9999;
   margin-top: 50px;
-  
+  z-index: 99999;
 }
-.logo-image{
+
+.logo-image {
   border-radius: 50%;
 }
 
 #navbarNav {
   display: flex;
   justify-content: center;
+}
+
+.open-social {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons li {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.social-icons a:hover {
+  color: #007bff;
 }
